@@ -1,0 +1,74 @@
+:root{
+    /* Color Palette */
+    --color-bg-primary: #0a1128;
+    --color-bg-secondary: #0f1a30;
+    --color-gradient-start: #0a1128;
+    --color-gradient-end: #1a1a2e;
+    --color-accent: #64d8ff;
+    --color-accent-light: #8ae2ff;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e0e0e0;
+    --color-input-bg: rgba(255, 255, 255, 0.05);
+    --color-input-border: rgba(255, 255, 255, 0.1);
+    --color-button-primary: #1e88e5;
+    --color-button-hover: #42a5f5;
+    --color-success: #4caf50;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+
+    /* Typography */
+    --font-heading: 'Neuton', serif;
+    --font-subheading: 'Neuton', serif;
+    --font-body: 'Neuton', serif;
+    --font-accent: 'Yatra One', cursive;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2.5rem;
+    
+    /* Border radius */
+    --border-radius-sm: 6px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    
+    /* Animation */
+    --transition-fast: 0.15s ease;
+    --transition-medium: 0.25s ease;
+    --transition-slow: 0.4s ease;
+    
+    /* Shadows */
+    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.15);
+    --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --shadow-glow: 0 0 10px var(--color-accent);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-body);
+    background: radial-gradient(ellipse at center, var(--color-gradient-start), var(--color-gradient-end));
+    color: var(--color-text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    overflow-x: hidden;
+    position: relative;
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}

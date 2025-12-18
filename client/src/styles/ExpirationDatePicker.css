@@ -1,0 +1,355 @@
+/* Expiration Date Picker Styles */
+.expiration-date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  margin-top: var(--spacing-sm);
+}
+
+.expiration-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  height: 42px;
+  background-color: rgba(100, 216, 255, 0.1);
+  color: var(--color-accent);
+  border: 1px solid rgba(100, 216, 255, 0.2);
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  width: 100%;
+  min-width: auto;
+  white-space: nowrap;
+}
+
+.expiration-toggle:hover {
+  background-color: rgba(100, 216, 255, 0.15);
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(100, 216, 255, 0.1);
+}
+
+.expiration-toggle:active {
+  transform: translateY(0);
+}
+
+.expiration-text {
+  flex-grow: 1;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.85rem;
+}
+
+.expiration-toggle i:first-child {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  min-width: 16px;
+}
+
+.expiration-toggle i:last-child {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  min-width: 12px;
+}
+
+.expiration-menu {
+  width: 100%;
+  background-color: rgba(15, 26, 48, 0.98);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(100, 216, 255, 0.25);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(100, 216, 255, 0.1),
+    0 0 20px rgba(100, 216, 255, 0.1);
+  z-index: 1000;
+  animation: slideInDown 0.2s ease;
+  overflow: hidden;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.expiration-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(100, 216, 255, 0.15), rgba(100, 216, 255, 0.05));
+  border-bottom: 1px solid rgba(100, 216, 255, 0.15);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.expiration-header i {
+  font-size: 1rem;
+}
+
+.expiration-options {
+  padding: 0.5rem;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.expiration-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: 0.25rem;
+}
+
+.expiration-option:last-child {
+  margin-bottom: 0;
+}
+
+.expiration-option:hover {
+  background-color: rgba(100, 216, 255, 0.1);
+  color: var(--color-text-primary);
+}
+
+.expiration-option.selected {
+  background-color: rgba(100, 216, 255, 0.15);
+  color: var(--color-accent);
+  box-shadow: 0 0 0 1px rgba(100, 216, 255, 0.2);
+}
+
+.expiration-option i:first-child {
+  width: 20px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.expiration-option i:last-child {
+  margin-left: auto;
+  color: var(--color-success);
+  font-size: 0.8rem;
+}
+
+.expiration-option span {
+  flex-grow: 1;
+}
+
+/* Custom Date Section */
+.custom-date-section {
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.75rem;
+}
+
+.custom-date-inputs {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius-md);
+  margin-top: 0.75rem;
+  border: 1px solid rgba(100, 216, 255, 0.1);
+}
+
+.date-input-group,
+.time-input-group {
+  margin-bottom: 1rem;
+}
+
+.date-input-group label,
+.time-input-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.date-input-group label i,
+.time-input-group label i {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+}
+
+.date-input,
+.time-input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 216, 255, 0.2);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.date-input:focus,
+.time-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(100, 216, 255, 0.2);
+}
+
+.date-input::-webkit-calendar-picker-indicator,
+.time-input::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(2);
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.date-input::-webkit-calendar-picker-indicator:hover,
+.time-input::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+.selected-date-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: rgba(100, 216, 255, 0.1);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid rgba(100, 216, 255, 0.2);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--color-accent-light);
+}
+
+.selected-date-preview i {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+}
+
+.selected-date-preview span {
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+/* Date Summary */
+.date-summary {
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.date-summary i {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+/* Scrollbar Styling */
+.expiration-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.expiration-options::-webkit-scrollbar-track {
+  background: rgba(23, 23, 23, 0.2);
+  border-radius: 3px;
+}
+
+.expiration-options::-webkit-scrollbar-thumb {
+  background: rgba(100, 216, 255, 0.3);
+  border-radius: 3px;
+}
+
+.expiration-options::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 216, 255, 0.5);
+}
+
+
+.styled-date-input::-webkit-datetime-edit-text,
+.styled-time-input::-webkit-datetime-edit-text {
+  color: var(--color-accent);
+  padding: 0 2px;
+}
+
+
+/* For Firefox */
+.styled-date-input[type="date"],
+.styled-time-input[type="time"] {
+  color-scheme: dark;
+}
+
+.styled-date-input[type="date"] i{
+  color: var(--color-accent);
+}
+
+.styled-time-input[type="time"] i{
+  color: var(--color-accent);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .expiration-date-picker {
+    width: 100%;
+    order: 3;
+  }
+  
+  .expiration-toggle {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0 0.75rem;
+  }
+  
+  .expiration-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .expiration-toggle {
+    font-size: 0.75rem;
+  }
+  
+  .expiration-menu {
+    width: 100%;
+    max-height: 50vh;
+  }
+  
+  .expiration-option {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .custom-date-inputs {
+    padding: 0.75rem;
+  }
+  
+  .date-input,
+  .time-input {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+}
