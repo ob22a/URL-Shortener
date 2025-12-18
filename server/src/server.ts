@@ -4,12 +4,15 @@ import router from './routes/redirectRoute.js';
 import connectDB from './config/db.js';
 import redisClient from './config/redisClient.js';
 import mongoose from 'mongoose';
+import { corsOptions } from './config/cors.js';
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors(corsOptions));
 
 app.get("/health",(req:Request, res:Response)=>{
     res.status(200).send("Server is healthy");
