@@ -2,12 +2,11 @@ import {useState} from "react"
 import {FaCopy} from "react-icons/fa"
 
 interface ResultProps {
-  inputUrl: string;
   shortenedUrl: string | null;
   showNotification: (type:"success" | "error", message:string)=>void;
 }
 
-const Result = ({ inputUrl, shortenedUrl, showNotification }: ResultProps) => {
+const Result = ({shortenedUrl, showNotification }: ResultProps) => {
     const [copyStatus, setCopyStatus] = useState<"copy" | "copied">("copy");
     const copyToClipboard = async () => {
         try {

@@ -111,7 +111,6 @@ function App() {
         
         {showResult && shortenedUrl && 
           <Result 
-              inputUrl={inputUrl}
               shortenedUrl={shortenedUrl}
               showNotification={showNotification}
           />

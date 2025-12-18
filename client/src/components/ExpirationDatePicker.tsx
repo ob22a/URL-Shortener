@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { addDays,format } from 'date-fns';
 import {type ExpirationOption, getDateFromOption, formatDate, formatDetailedDate, getMinDate, getMaxDate} from '../utils/dateHandler';
 import '../styles/ExpirationDatePicker.css';
 
