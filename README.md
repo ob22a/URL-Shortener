@@ -294,7 +294,7 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 ## 📞 Support & Contact
 
 -   🐛 Issues: [GitHub Issues](https://github.com/ob22a/URL-Shortener/issues)
--   [ob22a](https://github.com/ob22a)
+-   [ob22a](https://url-shortener-bd4b.onrender.com/Dzo0Y3r)
 
 ---
 
@@ -302,7 +302,7 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 
 **⭐ Star this repo if you find it helpful!**
 
-Made with ❤️ by [ob22a](https://github.com/ob22a)
+Made with ❤️ by [ob22a](https://url-shortener-bd4b.onrender.com/Dzo0Y3r)
 
 </div>
 
