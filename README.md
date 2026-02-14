@@ -2,8 +2,6 @@
 
 <div align="center">
 
-<!-- TODO: Add project logo -->
-
 [![GitHub stars](https://img.shields.io/github/stars/ob22a/URL-Shortener?style=for-the-badge)](https://github.com/ob22a/URL-Shortener/stargazers)
 
 [![GitHub forks](https://img.shields.io/github/forks/ob22a/URL-Shortener?style=for-the-badge)](https://github.com/ob22a/URL-Shortener/network)
@@ -33,8 +31,6 @@ This project is a robust, full-stack URL shortening service designed for speed a
 -   📏 **Type Safety**: Enhanced code quality and maintainability through TypeScript across the entire stack.
 
 ## 🖥️ Screenshots
-
-<!-- TODO: Add actual screenshots of the application (e.g., home page, successful short link generation) -->
 
 <img width="1906" height="857" alt="image" src="https://github.com/user-attachments/assets/ec82ff90-4c86-42f1-b91d-bc83f97db111" />
 <img width="1874" height="852" alt="image" src="https://github.com/user-attachments/assets/a314cb32-dd7b-4d57-ac28-3e85e6f49a3b" />
