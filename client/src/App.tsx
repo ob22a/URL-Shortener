@@ -38,7 +38,7 @@ function App() {
   }, [showNotification]);
 
   const validateUrl = useCallback((url:string):boolean=>{
-    const urlPattern = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+    const urlPattern = /^(https?:\/\/)?[^\s]+\.[^\s]+$/i;
     return urlPattern.test(url);
   }, []);
 
